@@ -1,11 +1,11 @@
 {
   "name": "fullstack-lab2",
   "version": "1.0.0",
-  "description": "Individual project in your Frontend course, where you’ve worked with and",
+  "description": "Individual project in your Frontend course, where you've worked with and",
   "main": "index.js",
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "cd server && nodemon index.js",
+    "server": "cd server && npm run dev",
     "client": "cd client && npm run dev"
   },
   "repository": {
@@ -21,7 +21,9 @@
   "homepage": "https://github.com/marcusgostasson/fullstack-lab2#readme",
   "dependencies": {
     "concurrently": "^9.1.2",
-    "dotenv": "^16.5.0",
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.9"
   }
 }
