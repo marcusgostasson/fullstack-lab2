@@ -5,6 +5,8 @@ import { projectRoutes } from './routes/projectRoutes.js';
 import { projectAssignmentRoutes } from './routes/projectAssignmentRoutes.js';
 import { connectDB } from './config/db.js'
 import cors from 'cors'
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 // Express & Json
 const app = express();
