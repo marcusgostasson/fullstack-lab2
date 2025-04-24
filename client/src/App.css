@@ -4,13 +4,38 @@ body {
 }
 
 #root {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  justify-content: center ;
+  padding: 2rem;
 }
 
-.table-header {
+.table {
+  border-collapse: collapse;
+  border: 2px solid black;
+  width: 100%;
+}
+
+.table-header-container {
   background-color: gray;
 }
 
-.table-body {
-  background-color: aqua;
+.table-header {
+  border-bottom: 2px solid black;
+  padding: 5px;
+}
+
+.table-body tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table-body td {
+  padding: 5px;
+}
+
+.table-body td,
+.table-header {
+  border-left: none;
+  border-right: none;
 }

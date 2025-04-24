@@ -1,3 +1,4 @@
+// Imports
 import mongoose from 'mongoose';
 
 const ProjectAssignmentSchema = mongoose.Schema({
@@ -17,7 +18,6 @@ const ProjectAssignmentSchema = mongoose.Schema({
   },
 });
 
-// Model
 const ProjectAssignment = mongoose.model(
   'ProjectAssignment',
   ProjectAssignmentSchema

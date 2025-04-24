@@ -1,3 +1,4 @@
+// Imports
 import mongoose from 'mongoose';
 
 const projectSchema = mongoose.Schema(
@@ -21,7 +22,6 @@ const projectSchema = mongoose.Schema(
   }
 );
 
-// Model
 const Project = mongoose.model('Project', projectSchema);
 
 export default Project;
