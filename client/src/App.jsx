@@ -8,6 +8,7 @@ import axios from 'axios';
 
 const PORT = import.meta.env.VITE_PORT;
 
+
 function App() {
   const [assignments, setAssignments] = useState([]);
   const [sortField, setSortField] = useState('');
@@ -27,9 +28,9 @@ function App() {
       }
     };
 
-    // Set auto update to 60 sec
+    // Set auto update to 6 sec
     fetchProjectAssignments();
-    const intervalId = setInterval(fetchProjectAssignments, 60000);
+    const intervalId = setInterval(fetchProjectAssignments, 6000);
 
     return () => clearInterval(intervalId);
   }, []);

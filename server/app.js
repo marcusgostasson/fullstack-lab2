@@ -25,4 +25,16 @@ app.use('/api/project_assignments', projectAssignmentRoutes);
 // Connect to database
 connectDB();
 
+// Serve static files from the React build folder
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const reactBuildPath = path.join(__dirname, '../client/dist');
+app.use(express.static(reactBuildPath));
+
+// Serve React's index.html
+app.use((req, res, next) => {
+  res.sendFile(path.join(reactBuildPath, 'index.html'));
+});
+
 export default app;

@@ -6,11 +6,13 @@ const ProjectAssignmentSchema = mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Employee',
     required: true,
+    unique: true
   },
   project_code: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Project',
     required: true,
+    unique: true
   },
   start_date: {
     type: Date,
