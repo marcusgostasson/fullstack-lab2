@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "cd server && npm run dev",
+    "server": "cd server && npm run start",
     "client": "cd client && npm run dev"
   },
   "repository": {
@@ -21,7 +21,8 @@
   "homepage": "https://github.com/marcusgostasson/fullstack-lab2#readme",
   "dependencies": {
     "concurrently": "^9.1.2",
-    "dotenv": "^16.5.0"
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
